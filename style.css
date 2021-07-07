@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --green:#3A9943
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* transition: all .2s linear; */
+}
+*::selection{
+    background:var(--green);
+    color: #fff;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: 
+    scroll-behavior: smooth;
+    
+}
+section{
+    padding: 1.5rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background:var(--green);
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background:#333;
+}
+.header-1,
+.header-2,
+.header-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background:var(--green);
+}
+.header-1{
+    border-bottom: 1rem solid rgba(255,255,255,.2);
+}
+.header-3{
+    background: #fff;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10000;
+}
+.header-1 span{
+   font-weight: lighter;
+   color: #fff; 
+   font-size: 2rem;
+}
+.header-1 a{
+    font-weight: lighter;
+    color: #fff; 
+    font-size: 1.7rem;
+}
+.header-1 a:hover{
+ color: yellow;
+ }
+ .header-2 .logo{
+     font-weight: bolder;
+     font-size: 3rem;
+     color: #fff;
+
+ }
+ .header-2 .logo i{
+    color: yellow;
+}
+.header-2 .search-ber-container{
+   display: flex; 
+   align-items: center;
+   width: 50rem;
+   padding: 1.5rem;
+   background: rgba(255,255,255,.2);
+   border-radius:.5rem;
+
+}
+.header-2 .search-ber-container #search-ber{
+    width: 100%;
+    background: none;
+    text-transform: none;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.header-2 .search-ber-container #search-ber::placeholder{
+    text-transform: capitalize;
+    color: #ddd;
+}
+.header-2 .search-ber-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.header-2 .search-ber-container label:hover{
+    color: yellow;
+}
+.header-3 .navbar{
+    color: #666;
+    font-size: 2rem;
+    margin-right: 26rem;
+}
+.header-3 .icons a{
+    color: #666;
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+}
+.header-3 a:hover {
+color:var(--green);
+}
+.navbar a{
+    float: left;
+    padding-left: 49px;
+    margin: 1px;
+    text-align: center;
+}
+#menu-bur{
+    font-size: 2rem;
+    color: #666;
+    border: 0.1rem solid #666;
+    border-radius: .3rem;
+    padding: 0.5rem 1.5rem;
+}
+.home{
+    padding-top: 0;
+
+}
+.home .home-slider{
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    border: 1rem solid rgba(0,0,0,.3);
+    border-top: 0;
+}
+
+.home .home-slider .box{
+    background-size: cover !important;
+    background-position: center;
+    min-height: 55rem;
+    position: relative;
+}
+.home .home-slider .box .content{
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translateY(-50%);
+    max-width: 50rem;
+}
+.home .home-slider .box .content span{
+    font: 3rem;
+    color: #fff;
+}
+.home .home-slider .box .content h3{
+    font-size: 6rem;
+    color: rgb(224, 9, 9);
+    padding: .5rem 0;
+    }
+
+
+
+
+    
