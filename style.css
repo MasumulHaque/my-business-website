@@ -27,7 +27,15 @@ html{
     
 }
 section{
-    padding: 1.5rem;
+    padding: 1.5rem 2%;
+}
+.heading{
+    font-size:3rem;
+    color: #444;
+    padding-left: 1rem;
+    border-left: .4rem solid var(--green);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 .btn{
     display: inline-block;
@@ -150,7 +158,7 @@ color:var(--green);
 .home .home-slider .box{
     background-size: cover !important;
     background-position: center;
-    min-height: 55rem;
+    min-height: 60rem;
     position: relative;
 }
 .home .home-slider .box .content{
@@ -167,9 +175,186 @@ color:var(--green);
     font-size: 6rem;
     color: rgb(224, 9, 9);
     padding: .5rem 0;
-    }
+ }
+ .banner-containe{
+display: flex;
+flex-wrap: wrap;
+gap: 1.5rem;
+}
 
+.banner-containe .banner{
+    flex: 1.4rem;
+    height: 38rem;
+    border: .3rem solid rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+}
+.banner-containe .banner .content{
+    position: absolute;
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%);
 
+}
+.banner-containe .banner img{
+height: 80%;
+width: 100%;
+object-fit: cover;
+}
+.banner-containe .banner .content h3{
+    color:rgb(247, 11, 11);
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+.banner-containe .banner:hover img{
+    transform: scale(1.2);
+}
+ .category .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.category .box-container .box{
+position: relative;
+flex: 1 1 23rem;
+height: 40rem;
+overflow: hidden;
+border: .2rem solid rgba(0,0,0,.3);
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+}
+.category .box-container .box img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.category .box-container .box .content{
+ position: absolute;
+  text-align: center;
+  padding-left: 30%;
+  padding: .5rem;
+  width: 100%;
+  bottom: -11px;
 
+}
+.category .box-container .box:hover .content{
+    bottom: 0%;
+}
+.category .box-container .box .content h3{
+    color: red;
+    font-size: 2rem;
+}
+.category .box-container .box .content .btn{
+    margin-bottom: 1.3rem;
+}
+.box .icon{
+    float: right;
     
+}
+.box img{
+height: 40%;
+width: 100%;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    border: .3rem solid rgba(0,0,0,.3);
+}
+.contact .row .map{
+    width: 100%;
+    flex: 1 1 40rem;
+}
+.contact .row form{
+   padding: 2rem;
+    flex: 1 1 40rem;
+}
+.contact .row .inputBox{
+    position: relative;
+ }
+ .contact .row form .inputBox input, .contact .row form .inputBox textarea{
+   width: 100%; 
+   border-bottom: .2rem solid rgba(0,0,0,.3);
+   padding: 1rem 0;
+   margin: 1.5rem 0;
+   font-size: 1.7rem;
+   text-transform: none;
+   color: #333;
+ }
+ .contact .row form .inputBox textarea{
+     resize: none;
+     height: 15rem;
+ }
+ .contact .row form .inputBox input:focus,
+.contact .row form .inputBox textarea:focus {
+     border-color: var(--green);
+ }
+ .contact .row form .inputBox label{
+     position: absolute;
+     top: 2.3rem; 
+     left: 0;
+     font-size: 1.7rem;
+ }
+ .contact .row form .inputBox input:focus ~label,
+.contact .row form .inputBox textarea:focus ~label,
+.contact .row form .inputBox input:valid ~label,
+.contact .row form .inputBox textarea:valid ~label{
+    top: -0.1em;
+    font-size: 1.5rem;
+    color: #666;
+}
+.footer .box-container{
+display: flex;
+flex-wrap: wrap;
+gap: 1.5em;
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box p{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a:hover{
+   text-decoration: underline;
+   color:var(--green) ;
+
+}
+.footer .credit{
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: rgba(0,0,0,.1);
+    text-align: center;
+    font-weight: normal;
+}
+.footer .credit a{
+    color:var(--green);
+}
+.scroll-top{
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 1000;
+    font-size: 3.5rem;
+    background: rgba(0,255,0,.1);
+    color: var(--green);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: .5rem 1.5rem;
+    display: none;
+}
